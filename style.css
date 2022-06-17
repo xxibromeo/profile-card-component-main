@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600&family=Barlow+Semi+Condensed:wght@100;400;500&family=Kumbh+Sans:wght@400;700&family=Mali:ital,wght@0,200;0,300;1,200;1,300&family=Open+Sans:wght@400;700&family=Poppins:wght@600&family=Raleway:wght@100;200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+body{
+    width: 1440px;
+    background-color:  hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg);
+    background-position:-50% 70%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+body >img{
+    position: absolute;
+    transform: translate(70%,40%);
+}
+h2,h3{
+    color: hsl(229, 23%, 23%);
+}
+p{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+.container{
+    position: relative;
+    background-color: white;
+    width: 23%;
+    overflow: hidden;
+    transform: translate(166%,60%);
+    border-radius: 5%;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+    height: 19vh;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+.profile h2{
+    margin-top: 10%;
+}
+span{
+    font-weight: 400;
+}
+.profile img{
+    position: absolute;
+    border: 5px solid white;
+    border-radius: 50%;
+    transform: translate(-50%,-90%);
+}
+.social{
+    display: flex;
+    padding: 7%;
+    align-items: center;
+    height: 12vh;
+}
+.Followers,.like,.photo{
+    padding-left: 10%;
+    line-height: 145%;
+}
+@media  (max-width:375px){
+    body{
+        width: 375px;
+        background-color:  hsl(185, 75%, 39%);
+        background-image: url(./images/bg-pattern-top.svg);
+        background-position:110% 110%;
+        overflow: hidden;
+   
+    }
+    body >img{
+        position: absolute;
+        transform: translate(10%,40%);
+    }
+    .container{
+        position: relative;
+        background-color: white;
+        width: 70vw;
+        overflow: hidden;
+        transform: translate(26%,50%);
+        border-radius: 5%;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 7%;
+        height: 19vh;
+        border-bottom: 1px solid hsl(0, 0%, 59%);
+    }
+    .profile h2{
+        margin-top: 10%;
+    }
+    span{
+        font-weight: 400;
+    }
+    .profile img{
+        position: absolute;
+        border: 5px solid white;
+        border-radius: 50%;
+        transform: translate(-50%,-90%);
+    }
+    .social{
+        display: flex;
+        padding: 7%;
+        align-items: center;
+        height: 12vh;
+    }
+    .Followers,.like{
+        padding-left: 5%;
+        line-height: 145%;
+    }
+    .attribution{
+        transform: translate(0%,1900%);
+    }
+}
